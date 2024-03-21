@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" name="date">
+    <br><br>
+    <legend>Dados de Acesso:</legend>
+    <label for="name">Usuario</label>
+    <input type="text" id="Usuario" name="Usuario" >
+    <label for="senha">Senha</label>
+    <input type="text" id="senha" >
+    <fieldset style="width: 400px;">
+        <legend>Dados pessoais</legend>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder=><br><br>
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco" placeholder=><br><br>
+        <label for="numero">Numero</label>
+        <input type="text" name="numero" id="numero" placeholder=><br><br>
+        <label for="complemento">complemento</label>
+        <input type="text" name="complemento" ><br><br>
+        <label for="Cidade">Cidade</label>
+        <form action="/action_page.php">
+            <input list="cidade" name="cidade"><br><br>
+            <datalist id="cidade">
+            <option value="Votorantim">
+            <option value="Porto Feliz">
+            <option value="Itu">
+            <option value="Sorocaba">
+            <option value="Boituva">
+            </datalist>
+            </form>
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado">
+                <option value="saoPaulo"></option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="campinas">Campinas</option>
+                <option value="curitiba">Curitiba</option>
+                <option value="rioDeJaneiro">Rio de Janeiro</option>
+                </select><br><br>
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" placeholder="digite seu CEP">        
+    </fieldset>
+    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="feminino" name="genero" value="feminino" checked>
+    <label for="feminino">Feminino</label><br>
+    <input type="radio" id="prefiroNaoFalar" name="genero" value="prefiroNaoFalar" checked>
+    <label for="prefiroNaoFalar">Prefiro Não falar</label><br><br>
+    <form>
+        <legend>Curso</legend>
+        <input type="checkbox" id="ADS" name="ADS" value="ADS">
+        <label for="ADS"> ADS</label><br>
+        <input type="checkbox" id="jogos" name="jogos" value="jogos">
+        <label for="jogos"> jogos</label><br>
+        <input type="checkbox" id="gestaoDeTi" name="gestaoDeTi" value="gestaoDeTi">
+        <label for="gestaoDeTi"> Gestão de TI</label><br><br>
+        </form>
+        <legend>Modelo</legend>
+    <input type="radio" id="presencial" name="modelo" value="presencial"> 
+    <label for="presencial">Presencial</label><br>
+    <input type="radio" id="EAD" name="modelo" value="EAD">
+    <label for="EAD">EAD</label><br>
+    <input type="radio" id="semiPresencial" name="modelo" value="semiPresencial">
+    <label for="semiPresencial">Semi Presencial</label>
+</body>
+</html>
